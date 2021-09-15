@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #E7F2FC;
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: 0.8fr 2.2fr;
+}
+
+header{
+    grid-column: 1;
+    background-color: #282A35; 
+    color: #E7F2FC;
+    display: grid;
+    padding-top:20px;
+    grid-template-rows: 0.7fr 0.2fr 0.05fr 1fr 0.05fr 1fr;
+}
+
+header article{
+    box-sizing: border-box;
+}
+
+.title{
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 255px;
+    width: 100%;
+}
+
+.title img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    box-shadow: -9px 7px 5px rgba(0, 0, 0, 0.77);
+    transition: 1s;
+}
+
+.title h5, h3{
+    text-align: center;
+}
+
+.title img:hover {
+    transform: scale(1.1);
+}
+
+.links-perfis{
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 1.5rem;
+}
+
+.links-perfis a{
+    text-decoration: none;
+    color: #E7F2FC;
+    display: flex;
+    transition: 0.2s;
+}
+.links-perfis a:hover{
+   color: #AFB3A7;
+}
+
+.links-perfis a i{
+    align-self: center;
+    justify-self: center;
+    margin-left: 5px;
+}
+
+header hr{
+    color: #E7F2FC;
+    height:2px;
+    border-width:0;
+    background-color: #E7F2FC;
+    margin: 0 20px;
+}
+
+#hr1{
+    grid-row: 3;
+}
+
+.infos-pessoais{
+    grid-row: 4;
+    font-size: 1.2rem;
+    margin: 0 22px 10px;
+}
+
+header h4{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+.infos-pessoais p{
+    margin: 2.5px 0px;
+}
+
+.infos-pessoais-title{
+    font-weight: bold;
+    color: #e7f8fc;
+}
+
+#hr2{
+    grid-row: 5;
+}
+
+.skills{
+    grid-row: 6;
+    font-size: 1.4rem;
+    margin: 0 15px 10px;
+    text-align: center;
+}
+.skills p{
+    margin: 2.5px 0px;
+}
+
+main{
+    grid-column: 2/3;
+    padding-top:20px;
+    margin: 15px 55px;
+}
+
+main hr{
+    color: black;
+    height:2px;
+    border-width:0;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+main section{
+    margin: 25px 0px;
+}
+
+main section h3{
+    text-align: start;
+    font-size: 1.7rem;
+
+}
+
+.biografia p{
+    font-size: 1.5rem;
+}
+
+
