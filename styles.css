@@ -21,9 +21,10 @@ header{
     grid-column: 1;
     background-color: #282A35; 
     color: #E7F2FC;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding-top:20px;
-    grid-template-rows: 0.7fr 0.2fr 0.05fr 1fr 0.05fr 1fr;
 }
 
 header article{
@@ -31,13 +32,13 @@ header article{
 }
 
 .title{
-    grid-row: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: 255px;
     width: 100%;
+    margin-bottom: 120px;
 }
 
 .title img {
@@ -57,11 +58,12 @@ header article{
 }
 
 .links-perfis{
-    grid-row: 2;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     font-size: 1.5rem;
+    margin: 25px 0px 20px 0px;
+    width: 95%;
 }
 
 .links-perfis a{
@@ -88,19 +90,14 @@ header hr{
     margin: 0 20px;
 }
 
-#hr1{
-    grid-row: 3;
-}
-
 .infos-pessoais{
-    grid-row: 4;
     font-size: 1.2rem;
     margin: 0 22px 10px;
 }
 
 header h4{
     text-align: center;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 .infos-pessoais p{
@@ -112,12 +109,7 @@ header h4{
     color: #e7f8fc;
 }
 
-#hr2{
-    grid-row: 5;
-}
-
 .skills{
-    grid-row: 6;
     font-size: 1.4rem;
     margin: 0 15px 10px;
     text-align: center;
