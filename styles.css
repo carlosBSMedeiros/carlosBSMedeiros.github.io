@@ -151,11 +151,49 @@ main section{
 main section h3{
     text-align: start;
     font-size: 1.7rem;
+}
 
+main section h3{
+    text-align: start;
+    font-size: 1.7rem;
+}
+
+main section h5{
+    text-align: start;
+    font-size: 1.4rem;
 }
 
 .biografia p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
+.exp-profissionais p {
+    font-size: 1.3rem;
+}
+
+.exp-profissionais h5 {
+    margin: 15px 0px 5px 0px;
+}
+
+.exp-profissionais hr {
+    color: black;
+    height:2px;
+    border-width:0;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 85%;
+    margin: 25px
+}
+
+.empresa{
+    padding-left: 25px;
+}
+
+.empresa-descricao{
+    margin: 0px 0px 10px 0px;
+}
+
+.cargo-descricao{
+    font-style: italic;
+    margin: 10px 0px;
+}
 
