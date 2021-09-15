@@ -100,6 +100,10 @@ header h4{
     margin: 10px 0px 10px 0px;
 }
 
+header h4 i{
+    margin-right: 9px;
+}
+
 .infos-pessoais p{
     margin: 2.5px 0px;
 }
@@ -145,6 +149,10 @@ main section h3{
     font-size: 1.7rem;
 }
 
+main section h3 i{
+    margin-right: 9px;
+}
+
 main section h3{
     text-align: start;
     font-size: 1.7rem;
@@ -177,7 +185,7 @@ main section h5{
 }
 
 .empresa{
-    padding-left: 25px;
+    padding-left: 37px;
 }
 
 .empresa-descricao{
