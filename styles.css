@@ -124,6 +124,11 @@ header h4{
 }
 .skills p{
     margin: 2.5px 0px;
+    transition: 0.5s;
+}
+
+.skills p:hover{
+    transform: scale(1.2);
 }
 
 main{
