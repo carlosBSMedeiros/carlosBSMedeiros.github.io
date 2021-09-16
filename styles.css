@@ -197,3 +197,25 @@ main section h5{
     margin: 10px 0px;
 }
 
+.formacoes{
+    padding-left: 37px;
+}
+
+.formacoes ul li ul{
+    padding-left: 25px;
+}
+.formacoes ul li ul p{
+    font-size: 1.3rem;
+}
+
+.hard-skills{
+    padding-left: 37px;
+}
+
+.hard-skills ul li ul{
+    padding-left: 25px;
+}
+.hard-skills ul li ul p{
+    font-size: 1.3rem;
+}
+
