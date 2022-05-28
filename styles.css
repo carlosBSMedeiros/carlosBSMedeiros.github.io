@@ -140,10 +140,6 @@ main hr{
     background-color: rgba(0, 0, 0, 0.77);
 }
 
-main section{
-    margin: 25px 0px;
-}
-
 main section h3{
     text-align: start;
     font-size: 1.7rem;
@@ -163,8 +159,14 @@ main section h5{
     font-size: 1.4rem;
 }
 
+.biografia {
+    margin-bottom: 10px;
+}
+
 .biografia p{
     font-size: 1.3rem;
+    text-align: justify;
+  text-justify: inter-word;
 }
 
 .exp-profissionais p {
@@ -218,5 +220,57 @@ main section h5{
 }
 .hard-skills ul li ul p{
     font-size: 1.3rem;
+}
+
+.wrapper-collapses{
+    margin-top: 20px;
+}
+
+.collapse-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #282A35;
+    border: #282A35 solid 0.3px;
+    color: #E7F2FC;
+    text-align: center;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.collapse-header:first-of-type{
+   border-radius: 4px 4px 0 0;
+}
+
+.collapse-header:last-of-type{
+    border-radius: 0 0 4px 4px;
+ }
+
+.collapse-header:hover{
+    border: #282a35bb solid 0.3px;
+    background-color: #282a35bb;
+    padding: 1rem;
+}
+
+.collapse-content{
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0px;
+    border-top: none;
+    border-left: #282A35 solid 0.3px;
+    border-right: #282A35 solid 0.3px;
+    box-sizing: border-box;
+}
+
+.collapse-content-active{
+    border-bottom: #282A35 solid 0.3px;
+    border-radius: 0 0 4px 4px;
+    padding: 10px 0;
+}
+
+.centralizar-icone{
+    display: flex;
+    align-items: center;
 }
 
