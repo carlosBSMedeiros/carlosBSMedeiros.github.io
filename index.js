@@ -15,13 +15,11 @@ collapses.forEach(btn => {
         }
 
         var icones = btn.querySelectorAll(".fa")
-        console.log(icones[1].classList[1])
         if(icones[1].classList[1] =='fa-plus'){
             icones[1].classList.replace('fa-plus', 'fa-minus')
         } else{
             icones[1].classList.replace('fa-minus', 'fa-plus')
         }
-        
     })
    
 });

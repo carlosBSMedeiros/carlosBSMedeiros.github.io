@@ -14,11 +14,18 @@ body{
     background-color: #E7F2FC;
     font-size: 1.8rem;
     display: grid;
-    grid-template-columns: 0.8fr 2.2fr;
+    grid-template-areas: 'perfil body';
 }
 
+@media (max-width: 850px) {
+    body{
+        grid-template-areas: 'perfil' 'body';
+
+    }
+  }
+
 header{
-    grid-column: 1;
+    grid-area: 'perfil';
     background-color: #282A35; 
     color: #E7F2FC;
     display: flex;
@@ -128,7 +135,7 @@ header h4 i{
 }
 
 main{
-    grid-column: 2/3;
+    grid-area: 'body';
     padding-top:20px;
     margin: 15px 55px;
 }
@@ -145,13 +152,25 @@ main section h3{
     font-size: 1.7rem;
 }
 
-main section h3 i{
+.collapse-header h3{
+    text-align: start;
+    font-size: 1.7rem;
+}
+
+.collapse-header h3 i{
     margin-right: 9px;
 }
 
-main section h3{
-    text-align: start;
-    font-size: 1.7rem;
+@media (max-width: 650px) {
+    .collapse-header h3{
+        text-align: start;
+        font-size: 1.4rem;
+    }
+
+    .collapse-header h3 i{
+        display: none;
+    }
+
 }
 
 main section h5{
@@ -223,7 +242,7 @@ main section h5{
 }
 
 .wrapper-collapses{
-    margin-top: 20px;
+    margin: 20px 0 10px 0;
 }
 
 .collapse-header{
@@ -274,3 +293,24 @@ main section h5{
     align-items: center;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    border: solid 0.3px transparent;
+    border-radius: 50%;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #282A35; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #282a35bb; 
+  }
